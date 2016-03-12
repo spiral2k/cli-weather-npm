@@ -8,14 +8,12 @@ module.exports = function(){
         json: true
     }, function(error, response, body){
 
-        if(error){
-            reject();
-        }else {
-            resolve(body);
-        }
-
-        return;
+            if(error){
+                reject();
+            }else {
+                resolve(body);
+            }
+            return;
+        });
     });
-    });
-
 };
