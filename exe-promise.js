@@ -28,7 +28,7 @@ function getWeather(location){
             return reject("No location provided.");
         }
 
-        var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + location + '&units=metric&appid=44db6a862fba0b067b1930da0d769e98';
+        var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + location + '&units=metric&appid=35abb26c686e46ba04772578a1dc6761';
 
         request({
             url: url,

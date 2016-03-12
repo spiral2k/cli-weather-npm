@@ -20,12 +20,20 @@
 //});
 
 
-function getLocation(location){
+function getLocation(){
     return new Promise(function(resolve, reject){
-        return
+        resolve('haifa');
     });
 }
 
-function getWeather(){
-
+function getWeather(location){
+    return new Promise(function(resolve, reject){
+        resolve('location: ' + location);
+    });
 }
+
+getLocation().then(function(location){
+    return getWeather(location);
+}).then(function(location){
+    console.log(location);
+});
